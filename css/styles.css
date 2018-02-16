@@ -1,0 +1,167 @@
+:root {
+  --red: #ad1b30;
+  --darkGrey: #272727;
+}
+
+html {
+  box-sizing: border-box;
+  font-weight: 900;
+  font-size: 10px;
+  color: var(--darkGrey);
+  background-color: lightgrey;
+}
+
+ul{
+  list-style: none;
+  text-align: center;
+  position: fixed;
+  width:100%;
+}
+
+ul li{
+  float: left;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #bfbfbf;
+    top:0;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #00ccff;
+}
+
+ul.topnav li a.active {
+  background-color: #008fb3;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+.user a{
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+.container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 200px);
+}
+
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 35px;
+  background-color:white;
+}
+
+.item1{
+background-color: lightgrey;
+border: 5px solid lightgrey;
+grid-row: 1 / span 10;
+}
+
+.item2{
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 3;
+}
+
+.item2 h1{
+  font-family: 'Courgette', cursive;
+}
+
+.item2 h6{
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Poiret One', cursive;
+  top:0;
+}
+
+.item3{
+background-color: lightgrey;
+border: 5px solid lightgrey;
+grid-column: 5;
+grid-row: 1 / span 10;
+}
+
+.item4{
+  grid-row: 3 / span 2;
+  grid-column: 2 / span 2;
+}
+
+.item5{
+  grid-row: 3 / span 2;
+  grid-column: 4 ;
+}
+
+.item8{
+  background-color: grey;
+  grid-row: 5 / span 4;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.item9{
+  background-color: grey;
+  grid-row: 5 / span 2;
+  grid-column: 3 / span 2;
+
+  font-family: 'Poiret One', cursive;
+}
+
+.item9 h2{
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.item p {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  font-family: 'Poiret One', cursive;
+  margin-bottom: 20px;
+  border-bottom: solid darkgrey 1px;
+  color: black;
+}
+
+a{
+  padding-bottom: 10px;
+}
+
+#user{
+  float: left;
+}
+
+#instafeed img{
+  border: 3px solid white;
+
+
+}
