@@ -106,6 +106,16 @@ grid-row: 1 / span 10;
   font-family: 'Courgette', cursive;
 }
 
+.item2 h3{
+  margin: 0 0 5px 0;
+  font-size: 25px;
+  font-family: 'Poiret One', cursive;
+  margin-bottom: 20px;
+  border-bottom: solid darkgrey 1px;
+  color: black;
+  font-weight: 1000;
+}
+
 .item2 h6{
   text-decoration: none;
   font-size: 15px;
