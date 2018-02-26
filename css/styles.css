@@ -11,55 +11,6 @@ html {
   background-color: lightgrey;
 }
 
-ul{
-  list-style: none;
-  text-align: center;
-  position: fixed;
-  width:100%;
-}
-
-ul li{
-  float: left;
-}
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #bfbfbf;
-    top:0;
-}
-
-ul.topnav li {
-  float: left;
-}
-
-ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {
-  background-color: #00ccff;
-}
-
-ul.topnav li a.active {
-  background-color: #008fb3;
-}
-
-ul.topnav li.right {
-  float: right;
-}
-
-@media screen and (max-width: 600px){
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
-}
-
 .user a{
   text-decoration: none;
   text-align: center;
@@ -91,15 +42,11 @@ ul.topnav li.right {
   color: black;
 }
 
-.item1{
-background-color: lightgrey;
-border: 5px solid lightgrey;
-grid-row: 1 / span 10;
-}
+
 
 .item2{
-  grid-row: 1 / span 2;
-  grid-column: 2 / span 3;
+  grid-row: 1 / span 5;
+  grid-column: 1 / span 5;
 }
 
 .item2 h1{
@@ -114,6 +61,7 @@ grid-row: 1 / span 10;
   border-bottom: solid darkgrey 1px;
   color: black;
   font-weight: 1000;
+  width: 100%;
 }
 
 .item2 h6{
@@ -123,25 +71,20 @@ grid-row: 1 / span 10;
   top:0;
 }
 
-.item3{
-background-color: lightgrey;
-border: 5px solid lightgrey;
-grid-column: 5;
-grid-row: 1 / span 10;
-}
+
 
 .item4{
-  grid-row: 3 / span 2;
+  grid-row: 7 / span 2;
   grid-column: 2 / span 2;
 }
 
 .item5{
-  grid-row: 3 / span 2;
+  grid-row: 7 / span 2;
   grid-column: 4 ;
 }
 
 .item6{
-  grid-row: 5 / span 2;
+  grid-row: 9 / span 2;
   grid-column: 3 / span 2;
 }
 
@@ -151,13 +94,14 @@ grid-row: 1 / span 10;
 }
 
 .item7{
-  grid-row: 5 / span 2;
+  grid-row: 9 / span 2;
   grid-column: 2 ;
 }
 
 .item8{
   background-color: grey;
-  grid-row: 7 / span 4;
+  grid-row: 11 / span 4;
+  grid-column: 2;
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
@@ -165,7 +109,7 @@ grid-row: 1 / span 10;
 
 .item9{
   background-color: grey;
-  grid-row: 7 / span 2;
+  grid-row: 11 / span 2;
   grid-column: 3 / span 2;
 
   font-family: 'Poiret One', cursive;
