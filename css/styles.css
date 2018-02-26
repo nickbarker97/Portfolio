@@ -20,6 +20,13 @@ html {
   grid-column: span 2;
 }
 
+@media (max-width: 800px) {
+      .blank {
+        height:50px!important;
+      }
+    }
+
+
 .blankline{
   background-color: none;
   border:0;
@@ -27,6 +34,13 @@ html {
   border-top: 1px solid darkgrey ;
   grid-column: span 2;
 }
+
+@media (max-width: 800px) {
+      .blankline {
+        height:50px!important;
+      }
+    }
+
 
 .user a{
   text-decoration: none;
@@ -75,22 +89,22 @@ html {
   font-family: 'Courgette', cursive;
 }
 
-.item2 h3{
-  margin: 0 0 5px 0;
-  font-size: 25px;
-  font-family: 'Poiret One', cursive;
-  margin-bottom: 20px;
-  border-bottom: solid darkgrey 1px;
-  color: black;
-  font-weight: 1000;
-}
-
 .item2 h6{
+  color: white;
   text-decoration: none;
   font-size: 15px;
   font-family: 'Poiret One', cursive;
   top:0;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
+
+.item2 p{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+
 
 
 
@@ -125,6 +139,13 @@ html {
   left:0;
 }
 
+@media (max-width: 800px) {
+      .item5 p {
+        font-size: 15px!important;
+      }
+    }
+
+
 .item5 h3{
   font-size: 50px;
   border: 0;
@@ -134,16 +155,30 @@ html {
   left:0;
 }
 
+@media (max-width: 800px) {
+      .item5 h3 {
+        font-size: 25px!important;
+      }
+    }
+
+
 .item6{
   grid-row: auto;
   display: block;
   margin-left: auto;
   margin-right: 0;
-  max-width: 280px;
+  max-width:500px;
   margin-top: auto;
   margin-bottom: auto;
 
 }
+
+
+@media (max-width: 800px) {
+      .item6 img {
+        max-width: 280px!important;
+      }
+    }
 
 .item7 p{
   font-size: 17px;
@@ -153,6 +188,12 @@ html {
   left:0;
 }
 
+@media (max-width: 800px) {
+      .item7 p {
+        font-size: 15px!important;
+      }
+    }
+
 .item7 h3{
   font-size: 50px;
   border: 0;
@@ -161,7 +202,11 @@ html {
   padding-right: auto;
   left:0;
 }
-
+@media (max-width: 800px) {
+      .item7 h3 {
+        font-size: 25px!important;
+      }
+    }
 
 .item8{
   background-color: grey;
@@ -173,6 +218,27 @@ html {
 
 }
 
+.item9{
+  background-color: grey;
+  grid-column:  span 2;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item9 p{
+  max-width: 500px;
+}
+
+.item9 img{
+  border-radius: 50%;
+  width:35%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #33ccff;
+}
+
 .footer{
   background-color: #33ccff;
   position:static;
@@ -180,7 +246,14 @@ html {
   text-align: center;
   font-family: 'Poiret One',cursive;
   grid-column:  span 2;
+  font-size: 25px;
 }
+
+@media (max-width: 800px) {
+      .footer {
+        font-size: 15px!important;
+      }
+    }
 
 a{
   padding-bottom: 10px;
